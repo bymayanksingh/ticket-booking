@@ -5,11 +5,17 @@ from django.db import models
 
 
 class Status(models.IntegerChoices):
+    """
+    Status choices available for tickets
+    """
     ACTIVE = 1
     EXPIRED = 2
 
 
 class Movie(models.Model):
+    """
+    Movie class to handle movies model
+    """
     name = models.CharField(max_length=200)
 
     def __str__(self):
@@ -17,6 +23,10 @@ class Movie(models.Model):
 
 
 class Slots(models.Model):
+    """
+    Slots class to handle slots model
+    """
+
     time = models.TimeField()
 
     def __str__(self):
@@ -24,6 +34,9 @@ class Slots(models.Model):
 
 
 class Show(models.Model):
+    """
+    Show class to handle show model
+    """
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
     total_tickets = models.IntegerField(
         validators=[MinValueValidator(1), MaxValueValidator(20)]
@@ -34,6 +47,9 @@ class Show(models.Model):
 
 
 class Tickets(models.Model):
+    """
+    Tickets class to handle tickets model
+    """
     ticket_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     user_name = models.CharField(max_length=100)
     no_of_tickets = models.IntegerField(
