@@ -149,9 +149,146 @@ For more details and available options, please check the [GitHub project](https:
 
 
 ## Gallery
+- Movies GET
 <p align="center">
-  <img src="./logo/swaggerui.png">
+  <img src="./logo/11.png">
 </p>
+
+- Movies POST
+
+<p align="center">
+  <img src="./logo/12.png">
+</p>
+
+- Movie ID GET
+
+<p align="center">
+  <img src="./logo/13.png">
+</p>
+
+- Movie ID PUT
+
+<p align="center">
+  <img src="./logo/14.png">
+</p>
+
+- Movie ID PATCH
+
+<p align="center">
+  <img src="./logo/15.png">
+</p>
+
+- Movie ID DELETE
+
+<p align="center">
+  <img src="./logo/16.png">
+</p>
+
+- Slots GET
+<p align="center">
+  <img src="./logo/21.png">
+</p>
+
+- Slots POST
+
+<p align="center">
+  <img src="./logo/22.png">
+</p>
+
+- Slot ID GET
+
+<p align="center">
+  <img src="./logo/23.png">
+</p>
+
+- Slot ID PUT
+
+<p align="center">
+  <img src="./logo/24.png">
+</p>
+
+- Slot ID PATCH
+
+<p align="center">
+  <img src="./logo/25.png">
+</p>
+
+- Slot ID DELETE
+
+<p align="center">
+  <img src="./logo/26.png">
+</p>
+
+- Shows GET
+<p align="center">
+  <img src="./logo/31.png">
+</p>
+
+- Shows POST
+
+<p align="center">
+  <img src="./logo/32.png">
+</p>
+
+- Show ID GET
+
+<p align="center">
+  <img src="./logo/33.png">
+</p>
+
+- Show ID PUT
+
+<p align="center">
+  <img src="./logo/34.png">
+</p>
+
+- Show ID PATCH
+
+<p align="center">
+  <img src="./logo/35.png">
+</p>
+
+- Show ID DELETE
+
+<p align="center">
+  <img src="./logo/36.png">
+</p>
+
+- Tickets GET
+<p align="center">
+  <img src="./logo/41.png">
+</p>
+
+- Tickets POST
+
+<p align="center">
+  <img src="./logo/42.png">
+</p>
+
+- Tickets ID GET
+
+<p align="center">
+  <img src="./logo/43.png">
+</p>
+
+- Ticket W/ Users TIME ID GET
+
+<p align="center">
+  <img src="./logo/44.png">
+</p>
+
+- Ticket ID PUT
+
+<p align="center">
+  <img src="./logo/45.png">
+</p>
+
+- Ticket ID DELETE
+
+<p align="center">
+  <img src="./logo/46.png">
+</p>
+
 
 ## Endpoints
 
