@@ -1,16 +1,25 @@
-from datetime import datetime, time
+from datetime import datetime, time, timedelta
 from tickets.models import Tickets, Status
 
 
-def mark_expired():
-    print("running")
-    tickets = Tickets.objects.all()
-    for ticket in tickets:
+def mark_deleted():
+    try:
         b = datetime.time(datetime.now())
-        a = ticket.booking_time
-        diff = datetime.combine(datetime.today(), b) - datetime.combine(
-            datetime.today(), a
-        )
-        if diff.seconds >= 28800:
+        a = timedelta(hours=8)
+        t = b-a
+        tickets = Tickets.objects.filter(booking_time=b-a)
+        tickets.delete()
+    except:
+        pass
+
+def mark_expired():
+    try:
+        b = datetime.time(datetime.now())
+        a = timedelta(hours=8)
+        tickets = Tickets.objects.filter(booking_time=b-a)
+        
+        for ticket in tickets.iterator:       
             ticket.status = Status.EXPIRED.value
             ticket.save()
+    except:
+        pass

@@ -38,8 +38,8 @@ ALLOWED_HOSTS = []
 
 # Cron Jobs
 CRONJOBS = [
-    # this run every hours at the 1st minute
-    ("* * * * *", "tickets.cron.mark_expired", ">> file.log"),
+    ("1 * * * *", "tickets.cron.mark_expired"), # this run every hours at the 1st minute
+    ("1 8 * * *", "tickets.cron.mark_deleted"), # this run every 8 hours at the 1st minute
 ]
 
 # Application definition
